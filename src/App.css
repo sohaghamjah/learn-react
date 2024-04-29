@@ -1,0 +1,14 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  display: block !important;
+}
+.appHeading{
+  background-color:blueviolet;
+  padding: 15px;
+  color: white;
+  text-align: center;
+  font-size: 36px;
+}
