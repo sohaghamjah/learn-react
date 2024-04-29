@@ -1,16 +1,13 @@
-import './App.css'
-const cardTitle = "Hello React Card";
-const cardDesc = "Lorem Ipsum is simply dummy text of the printing and typesetting industry.";
+import './App.css';
+import Card from './components/Card';
 
 function App() {
   return (
-    <div>
+    <div className='wrapper'>
       <h1 className='appHeading'>To Do App</h1>
-      <div className='card'>
-        <h3 className='cardTitle'>{cardTitle}</h3>
-        <p className='cardDesc'>{cardDesc}</p>
-        <p className='cardFooter'></p>
-      </div>
+      <Card />
+      <Card />
+      <Card />
     </div>
   )
 }
