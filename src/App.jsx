@@ -1,9 +1,10 @@
 import "./App.css";
 import Card from './components/Card';
 import Data from './data.json';
+import { v4 as uuidv4 } from 'uuid';
 
 let items = [];
-    items = Data.map((item, index) => <Card key={index} cardTitle={item.title} cardDesc={item.desc} /> );
+    items = Data.map((item) => <Card key={uuidv4()} cardTitle={item.title} cardDesc={item.desc} /> );
 
 
 function App() {
