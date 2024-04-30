@@ -1,12 +1,16 @@
 import "./App.css";
 import Card from './components/Card';
+import Data from './data.json';
+
+let items = [];
+    items = Data.map((item, index) => <Card key={index} cardTitle={item.title} cardDesc={item.desc} /> );
+
 
 function App() {
   return (
     <div className='wrapper'>
       <h1 className='appHeading'>To Do App</h1>
-      <Card cardTitle="React With Next Js" cardDesc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "/>
-      <Card cardTitle="Vue With Nuxt Js" cardDesc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "/>
+      {items}
     </div>
   )
 }
